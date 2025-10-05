@@ -1,112 +1,352 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>instagram</title>
-    <link rel="stylesheet" href="./instaStyle.css">
-</head>
+    <link rel="stylesheet" href="./instaStyle.css" />
+  </head>
 
-<body>
+  <body>
     <div class="container">
-        <div class="w-full w-header">
-            <div class="box-1">
-                <div class="avatar">
-                    <img src="https://avatar.iran.liara.run/public/41" alt="">
-                </div>
-                <div class="text">
-                    <h2>username</h2>
-                    <p>your location, country</p>
-                </div>
-            </div>
-            <button>
-                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
-                    width="256" height="256" viewBox="0 0 256 256" xml:space="preserve">
-                    <g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;"
-                        transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)">
-                        <circle cx="44.995000000000005" cy="44.995000000000005" r="4.365"
-                            style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;"
-                            transform="  matrix(1 0 0 1 0 0) " />
-                        <circle cx="44.995000000000005" cy="85.63499999999999" r="4.365"
-                            style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;"
-                            transform="  matrix(1 0 0 1 0 0) " />
-                        <circle cx="44.995000000000005" cy="4.365" r="4.365"
-                            style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;"
-                            transform="  matrix(1 0 0 1 0 0) " />
-                    </g>
-                </svg>
-            </button>
+      <div class="w-full w-header">
+        <div class="box-1">
+          <div class="avatar">
+            <img src="https://avatar.iran.liara.run/public/41" alt="" />
+          </div>
+          <div class="text">
+            <h2>username</h2>
+            <p>your location, country</p>
+          </div>
         </div>
-        <div class="w-full w-body">
-            <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
-                alt="">
+        <button>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            version="1.1"
+            width="256"
+            height="256"
+            viewBox="0 0 256 256"
+            xml:space="preserve"
+          >
+            <g
+              style="
+                stroke: none;
+                stroke-width: 0;
+                stroke-dasharray: none;
+                stroke-linecap: butt;
+                stroke-linejoin: miter;
+                stroke-miterlimit: 10;
+                fill: none;
+                fill-rule: nonzero;
+                opacity: 1;
+              "
+              transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)"
+            >
+              <circle
+                cx="44.995000000000005"
+                cy="44.995000000000005"
+                r="4.365"
+                style="
+                  stroke: none;
+                  stroke-width: 1;
+                  stroke-dasharray: none;
+                  stroke-linecap: butt;
+                  stroke-linejoin: miter;
+                  stroke-miterlimit: 10;
+                  fill: rgb(0, 0, 0);
+                  fill-rule: nonzero;
+                  opacity: 1;
+                "
+                transform="  matrix(1 0 0 1 0 0) "
+              />
+              <circle
+                cx="44.995000000000005"
+                cy="85.63499999999999"
+                r="4.365"
+                style="
+                  stroke: none;
+                  stroke-width: 1;
+                  stroke-dasharray: none;
+                  stroke-linecap: butt;
+                  stroke-linejoin: miter;
+                  stroke-miterlimit: 10;
+                  fill: rgb(0, 0, 0);
+                  fill-rule: nonzero;
+                  opacity: 1;
+                "
+                transform="  matrix(1 0 0 1 0 0) "
+              />
+              <circle
+                cx="44.995000000000005"
+                cy="4.365"
+                r="4.365"
+                style="
+                  stroke: none;
+                  stroke-width: 1;
+                  stroke-dasharray: none;
+                  stroke-linecap: butt;
+                  stroke-linejoin: miter;
+                  stroke-miterlimit: 10;
+                  fill: rgb(0, 0, 0);
+                  fill-rule: nonzero;
+                  opacity: 1;
+                "
+                transform="  matrix(1 0 0 1 0 0) "
+              />
+            </g>
+          </svg>
+        </button>
+      </div>
+      <div class="w-full w-body">
+        <img
+          id="postImage"
+          src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+          alt=""
+        />
+      </div>
+      <div class="w-full w-buttons">
+        <!-- Buttons can be added here -->
+        <div class="i-buttons">
+          <button id="like-button">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              version="1.1"
+              width="256"
+              height="256"
+              viewBox="0 0 256 256"
+              xml:space="preserve"
+            >
+              <g
+                style="
+                  stroke: none;
+                  stroke-width: 0;
+                  stroke-dasharray: none;
+                  stroke-linecap: butt;
+                  stroke-linejoin: miter;
+                  stroke-miterlimit: 10;
+                  fill: none;
+                  fill-rule: nonzero;
+                  opacity: 1;
+                "
+                transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)"
+              >
+                <path
+                  d="M 45 84.334 L 6.802 46.136 C 2.416 41.75 0 35.918 0 29.716 c 0 -6.203 2.416 -12.034 6.802 -16.42 c 4.386 -4.386 10.217 -6.802 16.42 -6.802 c 6.203 0 12.034 2.416 16.42 6.802 L 45 18.654 l 5.358 -5.358 c 4.386 -4.386 10.218 -6.802 16.42 -6.802 c 6.203 0 12.034 2.416 16.42 6.802 l 0 0 l 0 0 C 87.585 17.682 90 23.513 90 29.716 c 0 6.203 -2.415 12.034 -6.802 16.42 L 45 84.334 z M 23.222 10.494 c -5.134 0 -9.961 2 -13.592 5.63 S 4 24.582 4 29.716 s 2 9.961 5.63 13.592 L 45 78.678 l 35.37 -35.37 C 84.001 39.677 86 34.85 86 29.716 s -1.999 -9.961 -5.63 -13.592 l 0 0 c -3.631 -3.63 -8.457 -5.63 -13.592 -5.63 c -5.134 0 -9.961 2 -13.592 5.63 L 45 24.311 l -8.187 -8.187 C 33.183 12.494 28.356 10.494 23.222 10.494 z"
+                  style="
+                    stroke: none;
+                    stroke-width: 1;
+                    stroke-dasharray: none;
+                    stroke-linecap: butt;
+                    stroke-linejoin: miter;
+                    stroke-miterlimit: 10;
+                    fill: rgb(0, 0, 0);
+                    fill-rule: nonzero;
+                    opacity: 1;
+                  "
+                  transform=" matrix(1 0 0 1 0 0) "
+                  stroke-linecap="round"
+                />
+              </g>
+            </svg>
+            <p><b>12 likes</b></p>
+          </button>
+          <button id="comment-button">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              version="1.1"
+              width="256"
+              height="256"
+              viewBox="0 0 256 256"
+              xml:space="preserve"
+            >
+              <g
+                style="
+                  stroke: none;
+                  stroke-width: 0;
+                  stroke-dasharray: none;
+                  stroke-linecap: butt;
+                  stroke-linejoin: miter;
+                  stroke-miterlimit: 10;
+                  fill: none;
+                  fill-rule: nonzero;
+                  opacity: 1;
+                "
+                transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)"
+              >
+                <path
+                  d="M 88 90 c -0.245 0 -0.492 -0.045 -0.729 -0.138 l -17.928 -7.012 C 62.082 87.531 53.688 90 45 90 C 20.187 90 0 69.813 0 45 C 0 20.187 20.187 0 45 0 c 24.813 0 45 20.187 45 45 c 0 8.688 -2.469 17.082 -7.149 24.344 l 7.012 17.928 c 0.29 0.74 0.113 1.581 -0.448 2.143 C 89.032 89.797 88.521 90 88 90 z M 45 4 C 22.393 4 4 22.393 4 45 s 18.393 41 41 41 c 8.24 0 16.188 -2.437 22.984 -7.045 c 0.545 -0.369 1.238 -0.448 1.851 -0.207 l 14.638 5.725 l -5.725 -14.638 c -0.24 -0.613 -0.163 -1.306 0.207 -1.851 C 83.563 61.188 86 53.24 86 45 C 86 22.393 67.607 4 45 4 z"
+                  style="
+                    stroke: none;
+                    stroke-width: 1;
+                    stroke-dasharray: none;
+                    stroke-linecap: butt;
+                    stroke-linejoin: miter;
+                    stroke-miterlimit: 10;
+                    fill: rgb(0, 0, 0);
+                    fill-rule: nonzero;
+                    opacity: 1;
+                  "
+                  transform=" matrix(1 0 0 1 0 0) "
+                  stroke-linecap="round"
+                />
+              </g>
+            </svg>
+          </button>
+          <button id="share-button">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              version="1.1"
+              width="256"
+              height="256"
+              viewBox="0 0 256 256"
+              xml:space="preserve"
+            >
+              <g
+                style="
+                  stroke: none;
+                  stroke-width: 0;
+                  stroke-dasharray: none;
+                  stroke-linecap: butt;
+                  stroke-linejoin: miter;
+                  stroke-miterlimit: 10;
+                  fill: none;
+                  fill-rule: nonzero;
+                  opacity: 1;
+                "
+                transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)"
+              >
+                <path
+                  d="M 30.459 41.331 c -0.284 0 -0.563 -0.121 -0.758 -0.348 L 0.242 6.764 c -0.259 -0.301 -0.315 -0.727 -0.144 -1.085 C 0.27 5.321 0.624 5.09 1.035 5.112 l 88 3.092 c 0.452 0.016 0.838 0.333 0.939 0.775 c 0.102 0.441 -0.105 0.895 -0.505 1.107 L 30.928 41.214 C 30.779 41.293 30.619 41.331 30.459 41.331 z M 3.249 7.191 l 27.446 31.881 l 54.542 -29 L 3.249 7.191 z"
+                  style="
+                    stroke: none;
+                    stroke-width: 1;
+                    stroke-dasharray: none;
+                    stroke-linecap: butt;
+                    stroke-linejoin: miter;
+                    stroke-miterlimit: 10;
+                    fill: rgb(0, 0, 0);
+                    fill-rule: nonzero;
+                    opacity: 1;
+                  "
+                  transform=" matrix(1 0 0 1 0 0) "
+                  stroke-linecap="round"
+                />
+                <path
+                  d="M 42.354 84.889 c -0.048 0 -0.097 -0.004 -0.146 -0.011 c -0.393 -0.058 -0.714 -0.343 -0.819 -0.726 L 29.494 40.595 c -0.123 -0.451 0.083 -0.927 0.496 -1.146 L 88.53 8.321 c 0.399 -0.213 0.893 -0.13 1.201 0.201 s 0.356 0.828 0.117 1.212 L 43.203 84.418 C 43.018 84.714 42.696 84.889 42.354 84.889 z M 31.634 40.839 l 11.083 40.582 l 43.459 -69.583 L 31.634 40.839 z"
+                  style="
+                    stroke: none;
+                    stroke-width: 1;
+                    stroke-dasharray: none;
+                    stroke-linecap: butt;
+                    stroke-linejoin: miter;
+                    stroke-miterlimit: 10;
+                    fill: rgb(0, 0, 0);
+                    fill-rule: nonzero;
+                    opacity: 1;
+                  "
+                  transform=" matrix(1 0 0 1 0 0) "
+                  stroke-linecap="round"
+                />
+              </g>
+            </svg>
+          </button>
         </div>
-        <div class="w-full w-buttons">
-            <!-- Buttons can be added here -->
-            <div class="i-buttons">
-                <button id="like-button">
-                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
-                        width="256" height="256" viewBox="0 0 256 256" xml:space="preserve">
-                        <g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;"
-                            transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)">
-                            <path
-                                d="M 45 84.334 L 6.802 46.136 C 2.416 41.75 0 35.918 0 29.716 c 0 -6.203 2.416 -12.034 6.802 -16.42 c 4.386 -4.386 10.217 -6.802 16.42 -6.802 c 6.203 0 12.034 2.416 16.42 6.802 L 45 18.654 l 5.358 -5.358 c 4.386 -4.386 10.218 -6.802 16.42 -6.802 c 6.203 0 12.034 2.416 16.42 6.802 l 0 0 l 0 0 C 87.585 17.682 90 23.513 90 29.716 c 0 6.203 -2.415 12.034 -6.802 16.42 L 45 84.334 z M 23.222 10.494 c -5.134 0 -9.961 2 -13.592 5.63 S 4 24.582 4 29.716 s 2 9.961 5.63 13.592 L 45 78.678 l 35.37 -35.37 C 84.001 39.677 86 34.85 86 29.716 s -1.999 -9.961 -5.63 -13.592 l 0 0 c -3.631 -3.63 -8.457 -5.63 -13.592 -5.63 c -5.134 0 -9.961 2 -13.592 5.63 L 45 24.311 l -8.187 -8.187 C 33.183 12.494 28.356 10.494 23.222 10.494 z"
-                                style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;"
-                                transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
-                        </g>
-                    </svg>
-                    <p><b>12 likes</b></p>
-                </button>
-                <button id="comment-button">
-                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
-                        width="256" height="256" viewBox="0 0 256 256" xml:space="preserve">
-                        <g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;"
-                            transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)">
-                            <path
-                                d="M 88 90 c -0.245 0 -0.492 -0.045 -0.729 -0.138 l -17.928 -7.012 C 62.082 87.531 53.688 90 45 90 C 20.187 90 0 69.813 0 45 C 0 20.187 20.187 0 45 0 c 24.813 0 45 20.187 45 45 c 0 8.688 -2.469 17.082 -7.149 24.344 l 7.012 17.928 c 0.29 0.74 0.113 1.581 -0.448 2.143 C 89.032 89.797 88.521 90 88 90 z M 45 4 C 22.393 4 4 22.393 4 45 s 18.393 41 41 41 c 8.24 0 16.188 -2.437 22.984 -7.045 c 0.545 -0.369 1.238 -0.448 1.851 -0.207 l 14.638 5.725 l -5.725 -14.638 c -0.24 -0.613 -0.163 -1.306 0.207 -1.851 C 83.563 61.188 86 53.24 86 45 C 86 22.393 67.607 4 45 4 z"
-                                style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;"
-                                transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
-                        </g>
-                    </svg>
-                </button>
-                <button id="share-button">
-                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
-                        width="256" height="256" viewBox="0 0 256 256" xml:space="preserve">
-                        <g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;"
-                            transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)">
-                            <path
-                                d="M 30.459 41.331 c -0.284 0 -0.563 -0.121 -0.758 -0.348 L 0.242 6.764 c -0.259 -0.301 -0.315 -0.727 -0.144 -1.085 C 0.27 5.321 0.624 5.09 1.035 5.112 l 88 3.092 c 0.452 0.016 0.838 0.333 0.939 0.775 c 0.102 0.441 -0.105 0.895 -0.505 1.107 L 30.928 41.214 C 30.779 41.293 30.619 41.331 30.459 41.331 z M 3.249 7.191 l 27.446 31.881 l 54.542 -29 L 3.249 7.191 z"
-                                style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;"
-                                transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
-                            <path
-                                d="M 42.354 84.889 c -0.048 0 -0.097 -0.004 -0.146 -0.011 c -0.393 -0.058 -0.714 -0.343 -0.819 -0.726 L 29.494 40.595 c -0.123 -0.451 0.083 -0.927 0.496 -1.146 L 88.53 8.321 c 0.399 -0.213 0.893 -0.13 1.201 0.201 s 0.356 0.828 0.117 1.212 L 43.203 84.418 C 43.018 84.714 42.696 84.889 42.354 84.889 z M 31.634 40.839 l 11.083 40.582 l 43.459 -69.583 L 31.634 40.839 z"
-                                style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;"
-                                transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
-                        </g>
-                    </svg>
-                </button>
-            </div>
-            <button>
-                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
-                    width="256" height="256" viewBox="0 0 256 256" xml:space="preserve">
-                    <g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;"
-                        transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)">
-                        <path
-                            d="M 16.875 90.001 c -0.486 0 -0.978 -0.104 -1.447 -0.314 c -1.276 -0.572 -2.068 -1.797 -2.068 -3.195 V 5.873 c 0 -3.238 2.635 -5.872 5.873 -5.872 h 51.535 c 3.238 0 5.872 2.634 5.872 5.872 v 80.618 c 0 1.398 -0.793 2.623 -2.068 3.196 c -1.275 0.572 -2.717 0.351 -3.762 -0.579 L 47.295 68.198 c -1.308 -1.163 -3.281 -1.165 -4.589 0 L 19.19 89.108 C 18.529 89.696 17.711 90.001 16.875 90.001 z M 19.233 2.001 c -2.136 0 -3.873 1.737 -3.873 3.872 v 80.618 c 0 0.609 0.332 1.122 0.887 1.371 c 0.556 0.252 1.159 0.157 1.614 -0.248 l 23.516 -20.911 c 2.065 -1.838 5.181 -1.838 7.247 0 l 23.515 20.911 c 0.001 0 0.001 0 0.001 0 c 0.453 0.404 1.057 0.499 1.612 0.248 c 0.556 -0.249 0.888 -0.762 0.888 -1.371 V 5.873 c 0 -2.135 -1.737 -3.872 -3.872 -3.872 H 19.233 z"
-                            style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;"
-                            transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
-                    </g>
-                </svg>
-            </button>
+        <button>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            version="1.1"
+            width="256"
+            height="256"
+            viewBox="0 0 256 256"
+            xml:space="preserve"
+          >
+            <g
+              style="
+                stroke: none;
+                stroke-width: 0;
+                stroke-dasharray: none;
+                stroke-linecap: butt;
+                stroke-linejoin: miter;
+                stroke-miterlimit: 10;
+                fill: none;
+                fill-rule: nonzero;
+                opacity: 1;
+              "
+              transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)"
+            >
+              <path
+                d="M 16.875 90.001 c -0.486 0 -0.978 -0.104 -1.447 -0.314 c -1.276 -0.572 -2.068 -1.797 -2.068 -3.195 V 5.873 c 0 -3.238 2.635 -5.872 5.873 -5.872 h 51.535 c 3.238 0 5.872 2.634 5.872 5.872 v 80.618 c 0 1.398 -0.793 2.623 -2.068 3.196 c -1.275 0.572 -2.717 0.351 -3.762 -0.579 L 47.295 68.198 c -1.308 -1.163 -3.281 -1.165 -4.589 0 L 19.19 89.108 C 18.529 89.696 17.711 90.001 16.875 90.001 z M 19.233 2.001 c -2.136 0 -3.873 1.737 -3.873 3.872 v 80.618 c 0 0.609 0.332 1.122 0.887 1.371 c 0.556 0.252 1.159 0.157 1.614 -0.248 l 23.516 -20.911 c 2.065 -1.838 5.181 -1.838 7.247 0 l 23.515 20.911 c 0.001 0 0.001 0 0.001 0 c 0.453 0.404 1.057 0.499 1.612 0.248 c 0.556 -0.249 0.888 -0.762 0.888 -1.371 V 5.873 c 0 -2.135 -1.737 -3.872 -3.872 -3.872 H 19.233 z"
+                style="
+                  stroke: none;
+                  stroke-width: 1;
+                  stroke-dasharray: none;
+                  stroke-linecap: butt;
+                  stroke-linejoin: miter;
+                  stroke-miterlimit: 10;
+                  fill: rgb(0, 0, 0);
+                  fill-rule: nonzero;
+                  opacity: 1;
+                "
+                transform=" matrix(1 0 0 1 0 0) "
+                stroke-linecap="round"
+              />
+            </g>
+          </svg>
+        </button>
+      </div>
+      <div class="w-full w-content">
+        <p><b>username</b> This is a sample caption for the Instagram post.</p>
+        <p class="time">2 hours ago</p>
+      </div>
 
-        </div>
-        <div class="w-full w-content">
-            <h3><b>username</b> This is a sample caption for the Instagram post.</h3>
-            <p class="time">2 hours ago</p>
-        </div>
+      <script>
+        const postImg = document.getElementById("postImage");
+        const likeBtn = document.getElementById("like-button");
+        const container = postImg.parentElement;
 
+        postImg.addEventListener("dblclick", (e) => {
+          const rect = postImg.getBoundingClientRect();
+          const rectLike = likeBtn.getBoundingClientRect();
+          console.log(rectLike, "like");
+          
+          const startX = e.clientX - rect.left;
+          const startY = e.clientY - rect.top;
+
+
+          // target position (center of Like button)
+          const endX = rectLike.left + rectLike.width / 2 - postImg.left;
+          const endY = rectLike.top + rectLike.height / 2 - postImg.top;
+
+          console.log(endX, endY);
+          
+
+          // create heart
+          const heart = document.createElement("span");
+          heart.textContent = "❤️";
+          heart.classList.add("heart");
+          heart.style.left = `${startX}px`;
+          heart.style.top = `${startY}px`;
+
+          container.appendChild(heart);
+
+          // animate towards Like button after a small delay
+          requestAnimationFrame(() => {
+            heart.style.transform = `translate(${endX - startX}px, ${
+              endY - startY
+            }px) scale(0.5)`;
+            heart.style.opacity = "0";
+          });
+
+          // remove after animation
+          setTimeout(() => heart.remove(), 1000);
+        });
+      </script>
     </div>
-</body>
-
+  </body>
+  <!-- HKVITALS -->
 </html>
