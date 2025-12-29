@@ -13,7 +13,7 @@
         <div class="w-full w-header">
             <div class="box-1">
                 <div class="avatar">
-                    <img src="https://avatar.iran.liara.run/public/41" alt="" />
+                    <img src="./boy.png" alt="" />
                 </div>
                 <div class="text">
                     <h2>username</h2>
@@ -41,7 +41,7 @@
                   stroke-linecap: butt;
                   stroke-linejoin: miter;
                   stroke-miterlimit: 10;
-                  fill: rgb(0, 0, 0);
+                  fill: currentColor;
                   fill-rule: nonzero;
                   opacity: 1;
                 " transform="  matrix(1 0 0 1 0 0) " />
@@ -52,7 +52,7 @@
                   stroke-linecap: butt;
                   stroke-linejoin: miter;
                   stroke-miterlimit: 10;
-                  fill: rgb(0, 0, 0);
+                  fill: currentColor;
                   fill-rule: nonzero;
                   opacity: 1;
                 " transform="  matrix(1 0 0 1 0 0) " />
@@ -63,7 +63,7 @@
                   stroke-linecap: butt;
                   stroke-linejoin: miter;
                   stroke-miterlimit: 10;
-                  fill: rgb(0, 0, 0);
+                  fill: currentColor;
                   fill-rule: nonzero;
                   opacity: 1;
                 " transform="  matrix(1 0 0 1 0 0) " />
@@ -80,7 +80,8 @@
             <!-- Buttons can be added here -->
             <div class="i-buttons">
                 <button id="like-button">
-                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+                    <span class="like-svg-sp">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
                         width="256" height="256" viewBox="0 0 256 256" xml:space="preserve">
                         <g style="
                   stroke: none;
@@ -102,12 +103,14 @@
                     stroke-linecap: butt;
                     stroke-linejoin: miter;
                     stroke-miterlimit: 10;
-                    fill: rgb(0, 0, 0);
+                    fill: currentColor;
                     fill-rule: nonzero;
                     opacity: 1;
                   " transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
                         </g>
                     </svg>
+                    </span>
+                    <!-- <svg aria-label="Like" viewBox="0 0 48 48" class="like" width="128"><title>Like</title><defs><linearGradient gradientTransform="rotate(35)" id="ig_heart_gradient"><stop offset="0%" stop-color="#FF7A00"></stop><stop offset="40%" stop-color="#FF0169"></stop><stop offset="100%" stop-color="#D300C5"></stop></linearGradient></defs><path d="M34.6 3.1c-4.5 0-7.9 1.8-10.6 5.6-2.7-3.7-6.1-5.5-10.6-5.5C6 3.1 0 9.6 0 17.6c0 7.3 5.4 12 10.6 16.5.6.5 1.3 1.1 1.9 1.7l2.3 2c4.4 3.9 6.6 5.9 7.6 6.5.5.3 1.1.5 1.6.5s1.1-.2 1.6-.5c1-.6 2.8-2.2 7.8-6.8l2-1.8c.7-.6 1.3-1.2 2-1.7C42.7 29.6 48 25 48 17.6c0-8-6-14.5-13.4-14.5z" fill="url(#ig_heart_gradient)"></path></svg> -->
                     <p><b>12 likes</b></p>
                 </button>
                 <button id="comment-button">
@@ -133,7 +136,7 @@
                     stroke-linecap: butt;
                     stroke-linejoin: miter;
                     stroke-miterlimit: 10;
-                    fill: rgb(0, 0, 0);
+                    fill: currentColor;
                     fill-rule: nonzero;
                     opacity: 1;
                   " transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
@@ -163,7 +166,7 @@
                     stroke-linecap: butt;
                     stroke-linejoin: miter;
                     stroke-miterlimit: 10;
-                    fill: rgb(0, 0, 0);
+                    fill: currentColor;
                     fill-rule: nonzero;
                     opacity: 1;
                   " transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
@@ -176,7 +179,7 @@
                     stroke-linecap: butt;
                     stroke-linejoin: miter;
                     stroke-miterlimit: 10;
-                    fill: rgb(0, 0, 0);
+                    fill: currentColor;
                     fill-rule: nonzero;
                     opacity: 1;
                   " transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
@@ -207,7 +210,7 @@
                   stroke-linecap: butt;
                   stroke-linejoin: miter;
                   stroke-miterlimit: 10;
-                  fill: rgb(0, 0, 0);
+                  fill: currentColor;
                   fill-rule: nonzero;
                   opacity: 1;
                 " transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
@@ -223,7 +226,9 @@
         <script>
             const postImg = document.getElementById("postImage");
             const likeBtn = document.getElementById("like-button");
+            const likeSvgSp = likeBtn.querySelector(".like-svg-sp");
             const container = postImg.parentElement;
+            const LIKE_SVG = `<svg aria-label="Like" viewBox="0 0 48 48" class="like-btn-svg" fill="currentColor" width="128"><title>Like</title><defs><linearGradient gradientTransform="rotate(35)" id="ig_heart_gradient"><stop offset="0%" stop-color="#FF7A00"></stop><stop offset="40%" stop-color="#FF0169"></stop><stop offset="100%" stop-color="#D300C5"></stop></linearGradient></defs><path d="M34.6 3.1c-4.5 0-7.9 1.8-10.6 5.6-2.7-3.7-6.1-5.5-10.6-5.5C6 3.1 0 9.6 0 17.6c0 7.3 5.4 12 10.6 16.5.6.5 1.3 1.1 1.9 1.7l2.3 2c4.4 3.9 6.6 5.9 7.6 6.5.5.3 1.1.5 1.6.5s1.1-.2 1.6-.5c1-.6 2.8-2.2 7.8-6.8l2-1.8c.7-.6 1.3-1.2 2-1.7C42.7 29.6 48 25 48 17.6c0-8-6-14.5-13.4-14.5z" fill="url(#ig_heart_gradient)"></path></svg>`;
 
             postImg.addEventListener("dblclick", (e) => {
                 const rect = postImg.getBoundingClientRect();
@@ -242,26 +247,24 @@
 
                 // create heart
                 const heart = document.createElement("span");
-                heart.textContent = "❤️";
+                heart.innerHTML = LIKE_SVG;
                 heart.classList.add("heart");
                 heart.style.left = `${startX}px`;
                 heart.style.top = `${startY}px`;
 
-                // Random color tint and rotation
-                const colors = ["#ff3b3b", "#ff6b81", "#ff9f43", "#feca57", "#1dd1a1"];
-                const randomColor = colors[Math.floor(Math.random() * colors.length)];
+                
                 const randomRotate = Math.random() * 60 - 30; // -30deg to +30deg
-                heart.style.color = randomColor;
                 heart.style.transform = `translate(-50%, -50%) scale(0) rotate(${randomRotate}deg)`;
+                
 
                 container.appendChild(heart);
 
                 // POP-IN effect
                 requestAnimationFrame(() => {
                     heart.style.transition = `
-                        transform 0.4s cubic-bezier(0.25, 1, 0.5, 1),
-                        opacity 0.4s ease-in`;
-                    heart.style.transform = `translate(-50%, -50%) scale(1.4) rotate(${randomRotate}deg)`;
+                        transform 0.2s cubic-bezier(1, 1, 0.2, 1),
+                        opacity 0.2s ease-in`;
+                    heart.style.transform = `translate(-50%, -50%) scale(1) rotate(${randomRotate}deg)`;
                     heart.style.opacity = "1";
                 });
 
@@ -270,48 +273,51 @@
                 const controlY = Math.min(startY, endY) - 80; // curve upward
 
                 // Animate along curve with requestAnimationFrame
-                const duration = 1200;
+                const duration = 600;
                 const startTime = performance.now();
 
+                // iOS STYLE SPRING EASING
+                function springEase(t) {
+                return 1 - Math.cos(t * Math.PI * 1.2) * Math.exp(-t * 6);
+                }
+
                 function animateHeart(time) {
+                    const elapsed = time - startTime;
                     const progress = Math.min((time - startTime) / duration, 1);
                     const t = progress;
 
-                    // Quadratic Bezier curve formula
-                    const x =
-                        (1 - t) * (1 - t) * startX +
-                        2 * (1 - t) * t * controlX +
-                        t * t * endX;
-                    const y =
-                        (1 - t) * (1 - t) * startY +
-                        2 * (1 - t) * t * controlY +
-                        t * t * endY;
-
+                    // STRAIGHT LINE INTERPOLATION (NO BEZIER)
+                    const x = startX + (endX - startX) * t;
+                    const y = startY + (endY - startY) * t;
+                    
+                    
                     // Apply easing for smoother motion
-                    const easeOut = 1 - Math.pow(1 - t, 3);
+                    const easeOut = 1 - Math.pow(1 - t, 1.5);
 
                     heart.style.left = `${x}px`;
                     heart.style.top = `${y}px`;
 
                     // Scale down and fade out as it moves
-                    heart.style.transform = `translate(-50%, -50%) scale(${1.4 - easeOut * 0.8}) rotate(${randomRotate}deg)`;
-                    heart.style.opacity = `${1 - t}`;
+                    heart.style.transform = `translate(-50%, -50%) scale(${1.4 - easeOut}) rotate(${randomRotate}deg)`;
+                    heart.style.opacity = "1";
+                    
 
                     if (progress < 1) {
                         requestAnimationFrame(animateHeart);
                     } else {
-                        heart.remove();
+                        // CHANGE LIKE BUTTON ONLY AFTER ARRIVAL
+                        likeSvgSp.innerHTML = LIKE_SVG;
+                        heart.style.transform = `translate(-50%, -50%) scale(0.4) rotate(${randomRotate}deg)`;
+                        heart.style.opacity = "0";
+                        
                     }
                 }
 
                 setTimeout(() => requestAnimationFrame(animateHeart), 200);
 
-                // remove after animation
-                //setTimeout(() => heart.remove(), 1200);
             });
         </script>
     </div>
 </body>
-<!-- HKVITALS -->
 
 </html>
